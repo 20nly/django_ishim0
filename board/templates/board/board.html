@@ -1,6 +1,24 @@
 {% extends 'main.html' %}
 {% block content %}
 
-<h1>Billboard Template</h1>
+<h1>Billboard</h1>
+
+<p>Resume</p>
+
+<ul>
+    {% for resume in board_resume %}
+        <li>Title:<a href="{% url 'resume' resume.id %}">{{resume.title}}</a> --- {{resume.description}}</li>
+    {% endfor %}
+</ul>
+
+
+<p>Vacancy</p>
+
+<ul>
+    {% for vacancy in board_vacancy %}
+        <li>Title:<a href="{% url 'vacancy' vacancy.id %}">{{vacancy.title}}</a> --- {{vacancy.description}} </li>
+    {% endfor %}
+</ul>
+
 
 {% endblock content %}
