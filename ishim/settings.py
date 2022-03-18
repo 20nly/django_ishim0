@@ -126,3 +126,59 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+FieldOfActivityList = [
+    ('service','обслуживание'),
+    ('sales, purchases','продажи, закупки'),
+    ('education','образование'),
+    ('trade','торговля'),
+    ('logistics','логистика'),
+    ('catering','общественное питание'),
+    ('hotel business','гостиничный бизнес'),
+    ('beauty and health','красота и здоровье'),
+    ('marketing, advertising, PR','маркетинг, реклама, PR'),
+    ('finance, accounting, banks','финансы, бухгалтерия, банки'),
+    ('medicine','медицина'),
+    ('manufacturing','производство'),
+    ('law','юриспруденция'),
+    ('transport','транспорт'),
+    ('other','другое'),
+    (None,'не выбрано'),
+    ]
+
+registrationList = [
+    ('ashgabat','Ашхабад'),
+    ('ahal','Ахалский велаят'),
+    ('mary','Марыйский велаят'),
+    ('lebap','Лебпский велаят'),
+    ('dashoguz','Дашогузский велаят'),
+    ('balkan','Балканский велаят'),
+    (None,'не выбрано')
+    ]
+monthList = [
+    (1,'Январь'),
+    (2,'Февраль'),
+    (3,'Март'),
+    (4,'Апрель'),
+    (5,'Май'),
+    (6,'Июнь'),
+    (7,'Июль'),
+    (8,'Август'),
+    (9,'Сентябрь'),
+    (10,'Октябрь'),
+    (11,'Ноябрь'),
+    (12,'Декабрь')
+    ]
+educationList = [
+    ('secondary','среднее'),
+    ('secondary_special','среднее-специальное'),
+    ('incomplete_higher','неоконченное высшее'),
+    ('higher','высшее'),
+    ('master','магистр'),
+    ('candidate_of_sciences','кандидат наук'),
+    ('doctor_of_science','доктор наук'),
+    (None,'не выбрано')
+    ]
